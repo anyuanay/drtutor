@@ -8,14 +8,22 @@ from llama_index import (
     load_index_from_storage,
     ServiceContext,
 )
-from llama_index.llms import OpenAI
+#from llama_index.llms import OpenAI
+
+from llama_index.llms import Ollama
+
 
 
 STORAGE_DIR = "./storage"  # directory to cache the generated index
 DATA_DIR = "./data"  # directory containing the documents to index
 
+# run the llama2 model
+llm = Ollama(model="llama2")
+
 service_context = ServiceContext.from_defaults(
-    llm=OpenAI(model="gpt-3.5-turbo")
+    #llm=OpenAI(model="gpt-3.5-turbo")
+    llm = llm, 
+    embed_model="local:BAAI/bge-large-en"
 )
 
 def get_index():
@@ -36,3 +44,9 @@ def get_index():
         index = load_index_from_storage(storage_context,service_context=service_context)
         logger.info(f"Finished loading index from {STORAGE_DIR}")
     return index
+
+# add for llama2 
+def get_llm():
+    return llm
+
+
