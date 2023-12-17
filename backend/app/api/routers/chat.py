@@ -72,7 +72,7 @@ async def chat(
     
     # create the user message with the context and question
     user_message = ChatMessage(
-        role="user", content="CONTEXT: " + context + " QUESTION: " + lastMessage.content
+        role="user", content="[CONTEXT]: " + context + " [QUESTION]: " + lastMessage.content
     )
 
     # create the list of messages
