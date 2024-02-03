@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Tutor Academy</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/menu.js"></script>
+  </head>
+
+  <body class="min-h-screen bg-slate-100 dark:bg-black dark:text-white">
+    <header class="bg-sky-500 text-white sticky top-0 z-10">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+          <a href="#tutorial">👩🏽‍🏫 Dr. Tutor Academy</a>
+        </h1>
+        <div>
+          <button
+            id="ellipsis-button"
+            class="text-3xl md:hidden cursor-pointer"
+          >
+            &#8230;
+          </button>
+          <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+            <a href="#tutors" class="hover:opacity-90">Our Tutors</a>
+            <a href="#courses" class="hover:opacity-90">Courses</a>
+            <a href="#chat" class="hover:opacity-90">Chat</a>
+            <a href="#tutorial" class="hover:opacity-90">Sign In</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#tutorial" class="w-full py-6 text-center hover:opacity-90"
+            >Sign In</a
+          >
+          <a href="#tutors" class="w-full py-6 text-center hover:opacity-90"
+            >Our Tutors</a
+          >
+          <a href="#courses" class="w-full py-6 text-center hover:opacity-90"
+            >Courses</a
+          >
+          <a href="#chat" class="w-full py-6 text-center hover:opacity-90"
+            >Chat</a
+          >
+          <a href="#footer" class="w-full py-6 text-center hover:opacity-90"
+            >Contact Us</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="tutorial"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white"
+          >
+            Unlock Your Academic Potential
+            <span class="text-indigo-700 dark:text-indigo-300"
+              >Personalized Learning</span
+            >
+            Meets Expert Guidance
+          </h2>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            We help you excel in your studies and achieve your educational
+            goals...
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            Think Dr. Tutor Academy.
+          </p>
+        </article>
+        <img
+          class="w-1/2"
+          src="./img/drtutor_teaching_pencil_book_board.png"
+          alt="Dr.Tutor"
+        />
+      </section>
+
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section
+        id="tutors"
+        class="p-6 scroll-mt-20 my-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Tutors
+        </h2>
+
+        <ul
+          class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="./img/drtutor_teaching_pencil_book_sitting.png"
+              alt="Engaging tutors"
+              class="w-1/2 mb-6"
+            />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              Engaging and Enthusiastic
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              📗
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Approachable and Supportive
+            </p>
+          </li>
+
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="./img/drtutor_rocket_computer.png"
+              alt="Adaptable tutors"
+              class="w-1/2 mb-6"
+            />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              Adaptable and Flexible
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              🧬
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Knowledgeable and Well-Informed
+            </p>
+          </li>
+
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img
+              src="./img/drtutor_teaching_pencil_book_standing.png"
+              alt="Innovative tutors"
+              class="w-1/2 mb-6"
+            />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              Innovative and Creative
+            </h3>
+            <p
+              class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              💡
+            </p>
+            <p
+              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Inspires Critical Thinking
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section
+        id="courses"
+        class="p-6 scroll-mt-20 my-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Courses
+        </h2>
+
+        <figure class="my-12">
+          <figcaption
+            class="text-xl italic sm:text-2xl text-center mt-2 text-neutral-800 dark:text-slate-400"
+          >
+            &ldquo;Python for Data Science&#8221;
+          </figcaption>
+          <blockquote
+            class="bg-slate-300 dark:bg-black pl-8 pr-8 py-8 rounded-3xl relative"
+          >
+            <p
+              class="text-1xl sm:text-3xl text-left mt-1 text-lime-800 dark:text-slate-400"
+            >
+              Equips learners with the essential programming skills and Python
+              knowledge needed to analyze and manipulate data, implement
+              statistical models, and create data visualizations for effective
+              decision-making in diverse data-driven contexts.
+            </p>
+          </blockquote>
+        </figure>
+
+        <figure class="my-12">
+          <figcaption
+            class="text-xl italic sm:text-2xl text-center mt-2 text-neutral-800 dark:text-slate-400"
+          >
+            &ldquo;Large Language Models for Data Analytics&#8221;
+          </figcaption>
+          <blockquote
+            class="bg-slate-300 dark:bg-black pl-8 pr-8 py-8 rounded-3xl relative"
+          >
+            <p
+              class="text-1xl sm:text-3xl text-left mt-1 text-lime-800 dark:text-slate-400"
+            >
+              Explores the utilization of advanced language models, such as
+              GPT-3, to analyze and derive insights from diverse datasets,
+              enhancing natural language processing capabilities in data-driven
+              applications.
+            </p>
+          </blockquote>
+        </figure>
+      </section>
+
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section
+        id="chat"
+        class="p-6 scroll-mt-16 my-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Chat About Dr. Tutor
+        </h2>
+
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Question:</label>
+          <input
+            type="text"
+            id="question"
+            name="question"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Question"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          />
+          <label for="message">Response:</label>
+          <textarea
+            name="response"
+            id="response"
+            cols="30"
+            rows="10"
+            placeholder="AI Response"
+            required
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          ></textarea>
+          <button
+            class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-sky-500 text-white text-xl">
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Dr. Tutor Academy</h2>
+          Tutor Drive<br />
+          TutorialTown, NY, 12345<br />
+          Email: <a href="mailto:drtutor@gmail.com">drtutor@gmail.com</a><br />
+          Phone: <a href="tel:+11234567890">(123) 456-7890</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#tutors" class="hover:opacity-90">Our Tutors</a>
+          <a href="#courses" class="hover:opacity-90">Courses</a>
+          <a href="#chat" class="hover:opacity-90">Chat About Dr. Tutor</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
